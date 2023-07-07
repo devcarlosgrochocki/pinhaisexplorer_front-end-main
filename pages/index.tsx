@@ -1,13 +1,26 @@
 import Head from "next/head";
 import styles from "../styles/HomeNoAuth.module.scss";
+import HeaderNoAuth from "../src/components/homeNoAuth/headerNoAuth";
 
 const HomeNoAuth = () => {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Pinhais Explorer</title>
+        <link
+          rel="shortcut icon"
+          href="/favicon/favicon.png"
+          type="image/x-icon"
+        />
+        <meta property="og:title" content="Pinhais Explorer" key="title" />
+        <meta
+          name="description"
+          content="Explore as principais atrações turísticas, mapas, rotas e informações sobre Pinhais. Recursos de login, comentários e geolocalização disponíveis."
+        />
       </Head>
-      <main></main>
+      <main>
+        <HeaderNoAuth />
+      </main>
     </>
   );
 };
