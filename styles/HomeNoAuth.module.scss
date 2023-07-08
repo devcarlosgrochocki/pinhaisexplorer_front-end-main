@@ -1,0 +1,12 @@
+.sectionBackground {
+  background: linear-gradient(
+      91deg,
+      #000 11.98%,
+      rgba(0, 0, 0, 0) 53.13%,
+      #000 88.02%
+    ),
+    url("../public/background/presentation.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -4,7 +4,7 @@ import Link from "next/link";
 const HeaderNoAuth = function () {
   return (
     <>
-      <header className={styles.header}>
+      <Container fluid className={styles.header}>
         <img
           src="/logos/logo_projeto.svg"
           alt="logoProjeto"
@@ -22,7 +22,7 @@ const HeaderNoAuth = function () {
             </Button>
           </Link>
         </div>
-      </header>
+      </Container>
     </>
   );
 };

@@ -1,0 +1,117 @@
+@import "../../../../styles/colors.module.scss";
+
+.intro {
+  color: white;
+  font-size: 44px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.title {
+  color: $limeGreen;
+  font-size: 66px;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.location {
+  color: white;
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.searchBar {
+  border-radius: 0.5rem;
+  background: #fff;
+  display: flex;
+  padding: 0.9375rem;
+  align-items: center;
+  gap: 0.625rem;
+  width: 375px;
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.createAccountMessage {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.btnRegister {
+  background: $limeGreen;
+  border-radius: 8px;
+  color: $darkGreen;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0.6375rem 1.875rem;
+
+  &:hover {
+    background: #001b0b;
+    color: $limeGreen;
+    transition: 0.5s;
+    border-color: #001b0b;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    align-items: center !important;
+  }
+
+  .welcomeMessage {
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .location {
+    font-size: 28px;
+  }
+
+  .searchBar {
+    padding: 10px;
+    width: 330px;
+  }
+
+  .searchInput {
+    font-size: 14px;
+  }
+
+  .callToAction {
+    align-items: center;
+  }
+  .createAccountMessage {
+    font-size: 14px;
+  }
+
+  .btnRegister {
+    font-size: 16px;
+    padding: 0.4375rem 0.875rem;
+  }
+}
