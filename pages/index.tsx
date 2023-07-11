@@ -5,8 +5,15 @@ import PresentationSection from "../src/components/HomeNoAuth/PresentationSectio
 import TouristSpotSection from "../src/components/HomeNoAuth/TouristSpotSection";
 import LocationSection from "../src/components/HomeNoAuth/LocationSection";
 import Footer from "../src/components/common/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HomeNoAuth = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Head>
@@ -23,8 +30,9 @@ const HomeNoAuth = () => {
         />
       </Head>
       {/* O HEADER ESTAVA DENTRO DA MAIN */}
-      <HeaderNoAuth />
-      <main>
+      {/* <HeaderNoAuth /> */}
+      <main data-aos="fade-zoom-in" data-aos-duration="1600">
+        <HeaderNoAuth />
         <div className={styles.sectionBackgroundPresentation}>
           <PresentationSection />
         </div>
@@ -32,11 +40,14 @@ const HomeNoAuth = () => {
           <TouristSpotSection />
         </div>
         <LocationSection />
+        <footer className={styles.sectionBackgroundFooter}>
+          <Footer />
+        </footer>
       </main>
       {/* O FOOTER ESTAVA DENTRO DA MAIN */}
-      <footer className={styles.sectionBackgroundFooter}>
+      {/* <footer className={styles.sectionBackgroundFooter}>
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 };

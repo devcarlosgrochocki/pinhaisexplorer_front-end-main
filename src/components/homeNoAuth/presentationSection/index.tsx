@@ -12,7 +12,11 @@ const PresentationSection = function () {
 
   return (
     <>
-      <Container className={styles.container}>
+      <Container
+        className={styles.container}
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
         <Row className="gx-0">
           <Col
             md
