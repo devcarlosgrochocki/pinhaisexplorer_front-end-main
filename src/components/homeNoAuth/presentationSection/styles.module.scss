@@ -1,68 +1,54 @@
 @import "../../../../styles/colors.module.scss";
 
+$mainFontSize: 28px;
+$largeFontSize: 44px;
+$largerFontSize: 66px;
+$smallFontSize: 20px;
+$smallerFontSize: 18px;
+
+@mixin textStyles($color: white, $size: $mainFontSize, $weight: 700) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+.container {
+  padding: 4rem 0 9rem;
+}
+
 .intro {
-  color: white;
-  font-size: 44px;
-  font-family: "Roboto";
-  font-weight: 700;
+  @include textStyles($size: $largeFontSize);
 }
 
 .title {
-  color: $limeGreen;
-  font-size: 66px;
-  font-weight: 700;
-  font-family: "Roboto";
+  @include textStyles($color: $limeGreen, $size: $largerFontSize);
 }
 
 .location {
-  color: white;
-  font-size: 40px;
-  font-family: "Roboto";
-  font-weight: 700;
+  @include textStyles($size: $mainFontSize);
 }
 
 .searchBar {
   border-radius: 0.5rem;
-  background: #fff;
-  display: flex;
-  padding: 0.9375rem;
-  align-items: center;
-  gap: 0.625rem;
-  width: 375px;
+  width: 24rem;
+  padding: 0.94rem;
 }
 
 .searchInput {
-  background: transparent;
-  border: none;
   outline: none;
-  width: 100%;
-
   &:focus {
     box-shadow: none;
   }
 }
 
-.callToAction {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  align-items: flex-start;
-}
-
 .createAccountMessage {
-  color: white;
-  font-size: 20px;
-  font-family: "Roboto";
-  font-weight: 700;
+  @include textStyles($size: $smallerFontSize);
 }
 
 .btnRegister {
+  @include textStyles($color: $darkGreen, $size: 18px);
   background: $limeGreen;
   border-radius: 8px;
-  color: $darkGreen;
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 700;
   padding: 0.6375rem 1.875rem;
 
   &:hover {
@@ -73,25 +59,17 @@
   }
 }
 
-@media (max-width: 540px) {
-  .container {
-    align-items: center !important;
-  }
-
-  .welcomeMessage {
-    text-align: center;
-  }
-
+@media (max-width: 577px) {
   .intro {
-    font-size: 28px;
+    @include textStyles($size: $smallFontSize);
   }
 
   .title {
-    font-size: 40px;
+    @include textStyles($color: $limeGreen, $size: $mainFontSize);
   }
 
   .location {
-    font-size: 28px;
+    @include textStyles($size: $smallFontSize);
   }
 
   .searchBar {
@@ -103,15 +81,37 @@
     font-size: 14px;
   }
 
-  .callToAction {
-    align-items: center;
-  }
   .createAccountMessage {
-    font-size: 14px;
+    @include textStyles($size: 14px);
+    text-align: center;
   }
 
   .btnRegister {
-    font-size: 16px;
+    @include textStyles($color: $darkGreen, $size: 16px);
     padding: 0.4375rem 0.875rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .intro {
+    @include textStyles($size: smallerFontSize);
+  }
+
+  .title {
+    @include textStyles($color: $limeGreen, $size: $mainFontSize);
+  }
+
+  .location {
+    @include textStyles($size: $smallerFontSize);
+  }
+
+  .searchBar {
+    padding: 8px;
+    width: 270px;
+    gap: 0.2rem;
+  }
+
+  .searchInput {
+    font-size: 12px;
   }
 }

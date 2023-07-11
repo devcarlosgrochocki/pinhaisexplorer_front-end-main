@@ -1,0 +1,31 @@
+@import "../../../../styles/colors.module.scss";
+
+.title {
+  padding: 40px 80px;
+  box-shadow: 0px 4px 16px rgba(0, 26.56, 11.02, 0.05);
+  border-radius: 30px;
+  margin-top: -45px;
+
+  @media (max-width: 578px) {
+    padding: 20px 60px;
+  }
+}
+
+.newsTitle {
+  color: $darkGreen;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+
+  @media (max-width: 578px) {
+    font-size: 20px;
+  }
+}
+
+.rectangle {
+  width: 200px;
+  height: 1px;
+  background: $limeGreen;
+  border-radius: 8px;
+}

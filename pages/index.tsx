@@ -1,7 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/HomeNoAuth.module.scss";
-import HeaderNoAuth from "../src/components/homeNoAuth/headerNoAuth";
-import PresentationSection from "../src/components/homeNoAuth/presentationSection";
+import HeaderNoAuth from "../src/components/HomeNoAuth/HeaderNoAuth";
+import PresentationSection from "../src/components/HomeNoAuth/PresentationSection";
+import TouristSpotSection from "../src/components/HomeNoAuth/TouristSpotSection";
+import LocationSection from "../src/components/HomeNoAuth/LocationSection";
+import Footer from "../src/components/common/Footer";
 
 const HomeNoAuth = () => {
   return (
@@ -19,12 +22,21 @@ const HomeNoAuth = () => {
           content="Explore as principais atrações turísticas, mapas, rotas e informações sobre Pinhais. Recursos de login, comentários e geolocalização disponíveis."
         />
       </Head>
+      {/* O HEADER ESTAVA DENTRO DA MAIN */}
+      <HeaderNoAuth />
       <main>
-        <HeaderNoAuth />
-        <div className={styles.sectionBackground}>
+        <div className={styles.sectionBackgroundPresentation}>
           <PresentationSection />
         </div>
+        <div className={styles.sectionBackgroundTouristSpot}>
+          <TouristSpotSection />
+        </div>
+        <LocationSection />
       </main>
+      {/* O FOOTER ESTAVA DENTRO DA MAIN */}
+      <footer className={styles.sectionBackgroundFooter}>
+        <Footer />
+      </footer>
     </>
   );
 };

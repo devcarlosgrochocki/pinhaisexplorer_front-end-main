@@ -4,36 +4,41 @@ import Link from "next/link";
 import { useRef } from "react";
 
 const PresentationSection = function () {
-  const inputRef = useRef<HTMLInputElement | null>(null); // Inicializa o useRef corretamente
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const handleIconClick = () => {
-    inputRef.current?.focus(); // inputRef.current é agora um elemento de entrada HTML, então ele tem o método focus
+    inputRef.current?.focus();
   };
 
   return (
     <>
-      <Container className="py-4">
-        <Row>
-          <Col md className={`${styles.container} d-flex flex-column gap-4`}>
-            <div className={styles.welcomeMessage}>
-              <p className={styles.intro}>Olá, seja bem-vindo(a) ao</p>
-              <p className={styles.title}>Site de Turismo</p>
-              <p className={styles.location}>da cidade de Pinhais</p>
-            </div>
-            <div className={styles.searchBar}>
+      <Container className={styles.container}>
+        <Row className="gx-0">
+          <Col
+            md
+            className={`d-flex flex-column align-items-center align-items-sm-start gap-5`}
+          >
+            <header className="text-center text-sm-start">
+              <h1 className={styles.intro}>Olá, seja bem-vindo(a) ao</h1>
+              <h2 className={styles.title}>Site de Turismo</h2>
+              <h3 className={styles.location}>da cidade de Pinhais</h3>
+            </header>
+            <div
+              className={`${styles.searchBar} bg-white d-flex align-items-center gap-2`}
+            >
               <img
                 src="/search/search_icon.svg"
-                alt="logoSearch"
+                alt="Ícone de pesquisa"
                 onClick={handleIconClick}
               />
               <input
                 type="text"
-                className={styles.searchInput}
+                className={`${styles.searchInput} bg-transparent border-0 outline-none w-100`}
                 placeholder="Pesquise alguma informação em nosso site"
                 ref={inputRef}
               />
             </div>
-            <div className={styles.callToAction}>
+            <div className="d-flex flex-column gap-3 align-items-sm-start align-items-center">
               <p className={styles.createAccountMessage}>
                 Crie uma conta e desfrute do melhor do nosso site!
               </p>
@@ -41,15 +46,6 @@ const PresentationSection = function () {
                 <Button className={styles.btnRegister}>Criar conta</Button>
               </Link>
             </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col className="d-flex justify-content-center pt-5">
-            <img
-              src="/cards/arrow_icon.svg"
-              alt="arrowDown"
-              className={styles.arrowImg}
-            />
           </Col>
         </Row>
       </Container>

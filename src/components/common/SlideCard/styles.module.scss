@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 16px 0px rgba(0, 27, 11, 0.05);
+  width: 18.25844rem;
+  height: 22.22138rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(139, 233, 178, 0);
+  transition: background 0.3s ease-in-out;
+}
+
+.card:hover .cardHover {
+  background: rgba(139, 233, 178, 0.5);
+}
+
+.cardFooter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 1rem;
+  & .cardPointName {
+    margin: 0;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

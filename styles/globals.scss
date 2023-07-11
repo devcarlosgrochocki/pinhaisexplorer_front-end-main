@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 main {
   background-color: #ffffff;
@@ -11,6 +14,15 @@ main {
     margin: 0;
   }
 }
+
+.splide__pagination {
+  position: absolute;
+  bottom: -40px !important;
+  .splide__pagination__page.is-active {
+    background: #19d366;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

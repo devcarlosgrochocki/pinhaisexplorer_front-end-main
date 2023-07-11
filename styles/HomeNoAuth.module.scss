@@ -1,4 +1,4 @@
-.sectionBackground {
+.sectionBackgroundPresentation {
   background: linear-gradient(
       91deg,
       #000 11.98%,
@@ -9,4 +9,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 999;
+}
+.sectionBackgroundTouristSpot {
+  background: #0a100c;
+}
+
+.sectionBackgroundFooter {
+  background-color: #8be9b2;
 }

@@ -1,0 +1,21 @@
+.container {
+  height: 41.96875rem;
+
+  h2 {
+    color: #001b0b;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
