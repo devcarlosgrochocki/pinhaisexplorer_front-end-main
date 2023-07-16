@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const Footer = function () {
   return (
-    <>
+    <footer className={styles.sectionBackgroundFooter}>
       <Container className={`${styles.robotoFont} d-flex flex-column`}>
         <section className="d-flex flex-column flex-md-row justify-content-between py-4 flex-wrap gap-1">
           <img src="logos/logo_projeto.svg" alt="Logo do Projeto" />
@@ -142,7 +142,7 @@ const Footer = function () {
           </span>
         </div>
       </Container>
-    </>
+    </footer>
   );
 };
 

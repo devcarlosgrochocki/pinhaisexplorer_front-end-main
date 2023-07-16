@@ -11,7 +11,7 @@ const PresentationSection = function () {
   };
 
   return (
-    <>
+    <section className={styles.sectionBackgroundPresentation}>
       <Container
         className={styles.container}
         data-aos="fade-up"
@@ -53,7 +53,7 @@ const PresentationSection = function () {
           </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import SlideComponent from "../../common/SlideComponent";
 
 const TouristSpotSection: React.FC = () => {
   return (
-    <>
+    <section className={styles.sectionBackgroundTouristSpot}>
       <Container
         className={styles.container}
         data-aos="fade-right"
@@ -14,7 +14,7 @@ const TouristSpotSection: React.FC = () => {
         <TitleSectionComponent title="Principais pontos turísticos" />
         <SlideComponent />
       </Container>
-    </>
+    </section>
   );
 };
 

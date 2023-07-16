@@ -1,0 +1,62 @@
+// .form-group {
+//   margin-bottom: 1.5rem;
+// }
+
+// .btnSubmit {
+//   margin-top: 1.5rem;
+//   background-color: #88c9a7;
+//   color: white;
+// }
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  color: #001b0b;
+  &:hover {
+    color: #001b0b;
+  }
+}
+
+.textBold {
+  font-weight: 700;
+}
+
+.textSmall {
+  font-size: 0.9rem;
+}
+
+.input {
+  display: flex;
+  // padding: 0.9375rem;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: #e8e8e8;
+  border: none;
+  &:hover,
+  &:focus {
+    outline: none !important;
+    border-color: #28a745 !important;
+    box-shadow: 0 0 5px #28a745 !important;
+  }
+  &:checked {
+    background-color: #28a745;
+  }
+}
+
+.btnSubmit {
+  font-weight: 700;
+  background: #19d366;
+  color: #001b0b;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  padding: 10px 30px;
+  border: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: #001b0b;
+  }
+}
