@@ -1,0 +1,46 @@
+@import "./colors.module.scss";
+
+$fontColor: white;
+$fontWeight: 700;
+
+@mixin responsiveFontSizes($introSize, $titleSize, $locationSize) {
+  .intro {
+    font-size: $introSize;
+  }
+
+  .title {
+    font-size: $titleSize;
+  }
+
+  .location {
+    font-size: $locationSize;
+  }
+}
+
+.intro,
+.title,
+.location {
+  color: $fontColor;
+  font-weight: $fontWeight;
+}
+
+.intro {
+  font-size: 44px;
+}
+
+.title {
+  font-size: 66px;
+  color: $limeGreen;
+}
+
+.location {
+  font-size: 28px;
+}
+
+@media (max-width: 577px) {
+  @include responsiveFontSizes(20px, 28px, 20px);
+}
+
+@media (max-width: 330px) {
+  @include responsiveFontSizes(18px, 28px, 18px);
+}

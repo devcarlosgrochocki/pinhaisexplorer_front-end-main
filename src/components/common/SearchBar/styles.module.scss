@@ -1,0 +1,39 @@
+.searchBar {
+  border-radius: 0.5rem;
+  width: 24rem;
+  padding: 0.94rem;
+}
+
+.searchImg {
+  cursor: pointer;
+}
+
+.searchInput {
+  outline: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 577px) {
+  .searchBar {
+    padding: 10px;
+    width: 330px;
+  }
+
+  .searchInput {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 330px) {
+  .searchBar {
+    padding: 8px;
+    width: 270px;
+    gap: 0.2rem;
+  }
+
+  .searchInput {
+    font-size: 12px;
+  }
+}

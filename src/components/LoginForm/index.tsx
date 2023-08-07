@@ -49,7 +49,7 @@ const LoginForm = () => {
           Esqueci minha senha
         </a>
       </FormGroup>
-      <Button block className={`mt-4 ${styles.btnSubmit}`}>
+      <Button type="submit" block className={`mt-4 ${styles.btnSubmit}`}>
         Entrar na minha conta
       </Button>
 

@@ -1,0 +1,36 @@
+@import "../../../../styles/colors.module.scss";
+
+.createAccountMessage {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btnRegister {
+  color: $darkGreen;
+  font-size: 18px;
+  font-weight: 700;
+  background: $limeGreen;
+  border-radius: 8px;
+  padding: 0.6375rem 1.875rem;
+
+  &:hover {
+    background: #001b0b;
+    color: $limeGreen;
+    transition: 0.5s;
+    border-color: #001b0b;
+  }
+}
+
+@media (max-width: 577px) {
+  .createAccountMessage {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .btnRegister {
+    font-size: 16px;
+    padding: 0.4375rem 0.875rem;
+  }
+}

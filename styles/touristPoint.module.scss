@@ -1,0 +1,13 @@
+@import "./colors.module.scss";
+
+.titleWhite {
+  font-size: 66px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.titleGreen {
+  font-size: 66px;
+  color: $limeGreen;
+  font-weight: 700;
+}

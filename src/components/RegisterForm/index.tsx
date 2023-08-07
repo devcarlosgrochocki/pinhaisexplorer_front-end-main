@@ -46,7 +46,7 @@ const LoginForm = () => {
         />
         <FormFeedback id="password-error"></FormFeedback>
       </FormGroup>
-      <Button block className={`mt-4 ${styles.btnSubmit}`}>
+      <Button type="submit" block className={`mt-4 ${styles.btnSubmit}`}>
         Criar minha conta
       </Button>
 

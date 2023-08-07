@@ -6,7 +6,13 @@ const HeaderNoAuth = function () {
   return (
     <header>
       <Container className="d-flex flex-column flex-sm-row gap-3 justify-content-between align-items-center py-4">
-        <img src="/logos/logo_projeto.svg" alt="Logo do Projeto" className="" />
+        <Link href="/">
+          <img
+            src="/logos/logo_projeto.svg"
+            alt="Logo do Projeto"
+            className={styles.imgLogoProjeto}
+          />
+        </Link>
         <div className="d-flex gap-2">
           <Link href="/login">
             <Button

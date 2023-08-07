@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "../../../../styles/colors.module.scss";
+
+.card {
+  width: 14.24rem;
+  height: 22.25rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(47, 161, 221, 0.1);
+  overflow: hidden;
+
+  .imageContainer {
+    background-color: white;
+    padding: 1rem;
+
+    .userImage {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .commentContainer {
+    padding: 1rem;
+    color: black;
+    border-radius: 0.625rem;
+    background: $lightGreen;
+    height: 100%;
+
+    .commentName {
+      margin: 0; // Removendo margem padrão do parágrafo
+      text-align: center;
+      font-weight: bold;
+    }
+    .commentContent {
+      text-align: center;
+      font-family: Inter;
+      font-weight: 400;
+    }
+  }
+}

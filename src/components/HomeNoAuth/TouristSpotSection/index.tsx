@@ -3,9 +3,15 @@ import styles from "./styles.module.scss";
 import TitleSectionComponent from "../../common/TitleSectionComponent";
 import SlideComponent from "../../common/SlideComponent";
 
-const TouristSpotSection: React.FC = () => {
+interface TouristSpotSection {
+  theme: "yellow" | "green";
+}
+
+const TouristSpotSection: React.FC<TouristSpotSection> = ({ theme }) => {
+  const themeClass =
+    theme === "yellow" ? styles.yellowBackground : styles.greenBackground;
   return (
-    <section className={styles.sectionBackgroundTouristSpot}>
+    <section className={themeClass}>
       <Container
         className={styles.container}
         data-aos="fade-right"

@@ -2,6 +2,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 import SlideCard from "../SlideCard";
+import Link from "next/link";
 
 const SlideComponent = function () {
   return (
@@ -13,6 +14,7 @@ const SlideComponent = function () {
             perPage: 4,
             perMove: 1,
             width: 1200,
+            arrows: false,
             pagination: true,
             breakpoints: {
               1200: {
@@ -34,7 +36,11 @@ const SlideComponent = function () {
           }}
         >
           <SplideSlide>
-            <SlideCard pointName="Allison" imageUrl="/cards/bg-card.jpg" />
+            <Link href="/touristPoint">
+              <a style={{ color: "inherit", textDecoration: "none" }}>
+                <SlideCard pointName="Allison" imageUrl="/cards/bg-card.jpg" />
+              </a>
+            </Link>
           </SplideSlide>
           <SplideSlide>
             <SlideCard pointName="Curitiba" imageUrl="/cards/bg-card.jpg" />
