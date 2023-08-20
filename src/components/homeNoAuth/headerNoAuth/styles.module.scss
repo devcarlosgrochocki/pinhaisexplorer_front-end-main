@@ -5,6 +5,23 @@
   cursor: pointer;
 }
 
+.greenBackground {
+  background: $limeGreen;
+  &:hover {
+    background: $darkGreen;
+    color: $limeGreen;
+    transition: 0.5s;
+  }
+}
+
+.yellowBackground {
+  background: $goldenYellow;
+  &:hover {
+    background: #383103;
+    transition: 0.5s;
+  }
+}
+
 .navBtn {
   border-color: transparent;
   border-radius: 8px;
@@ -12,6 +29,7 @@
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
+  border: none;
 }
 
 .navBtnLogin {
@@ -20,16 +38,6 @@
   &:hover {
     background: $darkGreen;
     color: #d9d9d9;
-    transition: 0.5s;
-  }
-}
-
-.navBtnRegister {
-  background: $limeGreen;
-
-  &:hover {
-    background: $darkGreen;
-    color: $limeGreen;
     transition: 0.5s;
   }
 }

@@ -24,7 +24,6 @@
     padding: 1rem;
     color: black;
     border-radius: 0.625rem;
-    background: $lightGreen;
     height: 100%;
 
     .commentName {
@@ -37,5 +36,13 @@
       font-family: Inter;
       font-weight: 400;
     }
+  }
+
+  .yellowBackground {
+    background: $paleYellow;
+  }
+
+  .greenBackground {
+    background: $lightGreen;
   }
 }

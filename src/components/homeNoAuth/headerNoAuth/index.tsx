@@ -2,7 +2,13 @@ import { Button, Container } from "reactstrap";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 
-const HeaderNoAuth = function () {
+interface HeaderNoAuth {
+  theme: "yellow" | "green";
+}
+
+const HeaderNoAuth = function ({ theme }: HeaderNoAuth) {
+  const themeClass =
+    theme === "yellow" ? styles.yellowBackground : styles.greenBackground;
   return (
     <header>
       <Container className="d-flex flex-column flex-sm-row gap-3 justify-content-between align-items-center py-4">
@@ -24,7 +30,7 @@ const HeaderNoAuth = function () {
           </Link>
           <Link href="/register">
             <Button
-              className={`${styles.navBtn} ${styles.navBtnRegister}`}
+              className={`${themeClass} ${styles.navBtn} ${styles.navBtnRegister}`}
               aria-label="Botão para Criar Conta"
             >
               Criar conta

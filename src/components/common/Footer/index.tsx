@@ -1,9 +1,15 @@
 import { Container } from "reactstrap";
 import styles from "./styles.module.scss";
 
-const Footer = function () {
+interface Footer {
+  theme: "yellow" | "green";
+}
+
+const Footer = function ({ theme }: Footer) {
+  const themeClass =
+    theme === "yellow" ? styles.yellowBackground : styles.greenBackground;
   return (
-    <footer className={styles.sectionBackgroundFooter}>
+    <footer className={themeClass}>
       <Container className={`${styles.robotoFont} d-flex flex-column`}>
         <section className="d-flex flex-column flex-md-row justify-content-between py-4 flex-wrap gap-1">
           <img src="logos/logo_projeto.svg" alt="Logo do Projeto" />

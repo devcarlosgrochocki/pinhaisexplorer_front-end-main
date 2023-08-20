@@ -29,7 +29,7 @@ const HomeNoAuth = function () {
           content="Explore as principais atrações turísticas, mapas, rotas e informações sobre Pinhais. Recursos de login, comentários e geolocalização disponíveis."
         />
       </Head>
-      <HeaderNoAuth />
+      <HeaderNoAuth theme="green" />
       <main data-aos="fade-zoom-in" data-aos-duration="1600">
         <PresentationSection
           titleContent={
@@ -45,7 +45,7 @@ const HomeNoAuth = function () {
         <TouristSpotSection theme="green" />
         <LocationSection title="Como chegar em Pinhais" />
       </main>
-      <Footer />
+      <Footer theme="green" />
     </>
   );
 };

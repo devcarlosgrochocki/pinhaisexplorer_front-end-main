@@ -6,10 +6,11 @@ import CommentCard from "../CommentCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 interface CommentsSectionProps {
+  theme: "yellow" | "green";
   title: string;
 }
 
-const CommentsSection: React.FC<CommentsSectionProps> = ({ title }) => {
+const CommentsSection: React.FC<CommentsSectionProps> = ({ theme, title }) => {
   return (
     <section className={styles.container}>
       <TitleSectionComponent title={title} />
@@ -57,6 +58,7 @@ const CommentsSection: React.FC<CommentsSectionProps> = ({ title }) => {
         >
           <SplideSlide>
             <CommentCard
+              theme={theme}
               imageUrl="./comments/avatar2.jpeg"
               name="Rafael Ruppel"
               comment="Eu dei muito a bunda nesse lugar! Foi incrivel esse dia!"
@@ -64,6 +66,7 @@ const CommentsSection: React.FC<CommentsSectionProps> = ({ title }) => {
           </SplideSlide>
           <SplideSlide>
             <CommentCard
+              theme={theme}
               imageUrl="./comments/avatar1.jpeg"
               name="Allison H. Damaceno"
               comment="Adorei dar! Foi tão bom dar nesse lugar"

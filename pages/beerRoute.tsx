@@ -30,7 +30,7 @@ const BeerRoute = function () {
           type="image/x-icon"
         />
       </Head>
-      <HeaderNoAuth />
+      <HeaderNoAuth theme="yellow" />
       <main>
         <PresentationSection
           titleContent={
@@ -58,9 +58,12 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, wh
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book... "
         />
-        <Comments title="Comentários sobre a “Rota da Cerveja”" />
+        <Comments
+          theme="yellow"
+          title="Comentários sobre a “Rota da Cerveja”"
+        />
       </main>
-      <Footer />
+      <Footer theme="yellow" />
     </>
   );
 };

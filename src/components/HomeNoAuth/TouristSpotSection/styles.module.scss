@@ -1,3 +1,5 @@
+@import "../../../../styles/colors.module.scss";
+
 .container {
   height: 41.96875rem;
 }
@@ -7,5 +9,5 @@
 }
 
 .yellowBackground {
-  background: yellow;
+  background: $paleYellow;
 }

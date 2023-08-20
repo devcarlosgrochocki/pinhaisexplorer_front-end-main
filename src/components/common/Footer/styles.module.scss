@@ -1,3 +1,5 @@
+@import "../../../../styles/colors.module.scss";
+
 .robotoFont {
   font-family: "Roboto", sans-serif;
 }
@@ -10,6 +12,10 @@
     color: inherit;
   }
 }
-.sectionBackgroundFooter {
-  background-color: #8be9b2;
+.greenBackground {
+  background-color: $lightGreen;
+}
+
+.yellowBackground {
+  background-color: $paleYellow;
 }
