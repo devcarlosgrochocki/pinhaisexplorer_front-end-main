@@ -18,9 +18,23 @@
   font-size: 18px;
   &:hover,
   &:focus {
-    background: $limeGreen;
-    color: $darkGreen;
     border-color: transparent;
     transition: 0.5s;
+  }
+}
+
+.yellowBackground {
+  background-color: $paleYellow;
+  &:hover {
+    background: $goldenYellow;
+    color: $darkGreen;
+  }
+}
+
+.greenBackground {
+  background-color: $lightGreen;
+  &:hover {
+    background: $limeGreen;
+    color: $darkGreen;
   }
 }

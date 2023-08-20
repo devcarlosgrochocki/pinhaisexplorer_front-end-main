@@ -11,6 +11,8 @@ interface CommentsSectionProps {
 }
 
 const CommentsSection: React.FC<CommentsSectionProps> = ({ theme, title }) => {
+  const themeClass =
+  theme === "yellow" ? styles.yellowBackground : styles.greenBackground;
   return (
     <section className={styles.container}>
       <TitleSectionComponent title={title} />
@@ -27,7 +29,7 @@ const CommentsSection: React.FC<CommentsSectionProps> = ({ theme, title }) => {
             md="12"
           >
             <Button
-              className={`${styles.btn} fw-bold d-flex gap-2 justify-content-space-between align-items-center`}
+              className={`${styles.btn} ${themeClass} fw-bold d-flex gap-2 justify-content-space-between align-items-center`}
               aria-label="Botão para Criar Conta"
             >
               <img src="./comments/icon.svg" alt="" />
