@@ -23,7 +23,11 @@
   transition: background 0.3s ease-in-out;
 }
 
-.card:hover .cardHover {
+.yellowBackground:hover {
+  background: rgba(210, 233, 139, 0.5);
+}
+
+.greenBackground:hover {
   background: rgba(139, 233, 178, 0.5);
 }
 

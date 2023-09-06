@@ -26,6 +26,13 @@
 .rectangle {
   width: 200px;
   height: 1px;
-  background: $limeGreen;
   border-radius: 8px;
+}
+
+.greenBackground {
+  background: $limeGreen;
+}
+
+.yellowBackground {
+  background: $goldenYellow;
 }

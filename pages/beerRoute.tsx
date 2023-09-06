@@ -1,7 +1,7 @@
 import Head from "next/head";
 import HeaderNoAuth from "../src/components/HomeNoAuth/HeaderNoAuth";
 import PresentationSection from "../src/components/HomeNoAuth/PresentationSection";
-import styles from "../styles/touristPoint.module.scss";
+import styles from "../styles/beerRoute.module.scss";
 import TitleSectionComponent from "../src/components/common/TitleSectionComponent";
 import PhotoGallery from "../src/components/TouristPoint/PhotoGallery";
 import AboutTouristicPoint from "../src/components/TouristPoint/AboutTouristicPoint";
@@ -36,14 +36,14 @@ const BeerRoute = function () {
           titleContent={
             <>
               <h1 className={styles.titleWhite}>Bem vindo à</h1>
-              <h1 className={styles.titleGreen}>Rota da Cerveja!</h1>
+              <h1 className={styles.titleYellow}>Rota da Cerveja!</h1>
             </>
           }
-          backgroundImageUrl={"./background/beer.svg"}
+          backgroundImageUrl={"./points/beerBackground.jpg"}
         />
         <TouristSpotSection theme="yellow" />
 
-        <TitleSectionComponent title="Galeria de fotos da “Rota da Cerveja”" />
+        <TitleSectionComponent theme="yellow" title="Galeria de fotos da “Rota da Cerveja”" />
         <PhotoGallery images={images} />
         <LocationSection
           title="Como chegar na “Rota da Cerveja”"

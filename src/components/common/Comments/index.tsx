@@ -63,15 +63,31 @@ const CommentsSection: React.FC<CommentsSectionProps> = ({ theme, title }) => {
               theme={theme}
               imageUrl="./comments/avatar2.jpeg"
               name="Rafael Ruppel"
-              comment="Eu dei muito a bunda nesse lugar! Foi incrivel esse dia!"
+              comment="Maravilhoso!! Me senti iluminado ao visitar essa beleza natural, com certeza visitarei novamente!"
             />
           </SplideSlide>
           <SplideSlide>
             <CommentCard
               theme={theme}
-              imageUrl="./comments/avatar1.jpeg"
-              name="Allison H. Damaceno"
-              comment="Adorei dar! Foi tão bom dar nesse lugar"
+              imageUrl="./comments/avatar3.jpeg"
+              name="Carlos Santos Grochocki"
+              comment="Simplesmente incrível! Tem espaço para correr, fazer exercícios, caminhar, tudo que imaginar!"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <CommentCard
+              theme={theme}
+              imageUrl="./comments/avatar5.jpeg"
+              name="João M."
+              comment="Melhor final de semana com minha namorada foi nesse parque"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <CommentCard
+              theme={theme}
+              imageUrl="./comments/avatar4.jpeg"
+              name="Alexandre"
+              comment="Me diverti bastante. Aproveitei para andar de skate"
             />
           </SplideSlide>
         </Splide>

@@ -18,7 +18,7 @@ const TouristSpotSection: React.FC<TouristSpotSection> = ({ theme }) => {
         data-aos-duration="1200"
       >
         <TitleSectionComponent title="Principais pontos turísticos" />
-        <SlideComponent />
+        <SlideComponent theme={theme} />
       </Container>
     </section>
   );

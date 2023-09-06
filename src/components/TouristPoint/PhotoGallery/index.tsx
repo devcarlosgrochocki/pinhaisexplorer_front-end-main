@@ -47,7 +47,7 @@ const PhotoGallery: FC<PhotoGalleryProps> = ({ images }) => {
             <img
               src={image}
               alt={`Touristic Point ${index}`}
-              style={{ maxWidth: "490px", maxHeight: "262px" }}
+              style={{ maxWidth: "490px", maxHeight: "262px", borderRadius: "10px"}}
             />
           </SplideSlide>
         ))}

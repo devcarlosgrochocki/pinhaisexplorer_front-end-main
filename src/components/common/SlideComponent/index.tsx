@@ -4,7 +4,11 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import SlideCard from "../SlideCard";
 import Link from "next/link";
 
-const SlideComponent = function () {
+interface SlideComponentProps {
+  theme: "yellow" | "green";
+}
+
+const SlideComponent: React.FC<SlideComponentProps> = ({ theme }) => {
   return (
     <>
       <div className="d-flex position-relative flex-column align-items-center">
@@ -38,24 +42,22 @@ const SlideComponent = function () {
           <SplideSlide>
             <Link href="/touristPoint">
               <a style={{ color: "inherit", textDecoration: "none" }}>
-                <SlideCard pointName="Allison" imageUrl="/cards/bg-card.jpg" />
+                <SlideCard theme={theme} pointName="Parque das Águas" imageUrl="/points/parqueDasAguas.png" />
               </a>
             </Link>
           </SplideSlide>
           <SplideSlide>
-            <SlideCard pointName="Curitiba" imageUrl="/cards/bg-card.jpg" />
+            <SlideCard theme={theme} pointName="Bosque Municipal de Pinhais" imageUrl="/points/parqueDasAguas.png" />
           </SplideSlide>
           <SplideSlide>
-            <SlideCard pointName="Pinhais" imageUrl="/cards/bg-card.jpg" />
+            <SlideCard theme={theme} pointName="Paronamico Parque Clube" imageUrl="/points/parqueDasAguas.png" />
           </SplideSlide>
           <SplideSlide>
             <SlideCard
-              pointName="Parque das Aguas Testando"
-              imageUrl="/cards/bg-card.jpg"
+              theme={theme}
+              pointName="Capela Nossa Senhora da Luz"
+              imageUrl="/points/parqueDasAguas.png"
             />
-          </SplideSlide>
-          <SplideSlide>
-            <SlideCard pointName="Ruppel" imageUrl="/cards/bg-card.jpg" />
           </SplideSlide>
         </Splide>
       </div>

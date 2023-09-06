@@ -93,40 +93,7 @@ const Footer = function ({ theme }: Footer) {
           </div>
         </section>
         <hr />
-        <div className="d-flex flex-column gap-4 justify-content-between flex-md-row align-items-center flex-wrap">
-          <img
-            className="bg-white p-2 rounded"
-            src="sponsorships/norton_icon.svg"
-            alt="norton_icon"
-          />
-          <div className="d-flex flex-column gap-1 align-items-center ">
-            <div className="d-flex justify-content-between gap-3">
-              <a
-                href="https://play.google.com/store/apps/details?id=br.com.ipm.mobile.Atende.Net&hl=pt_BR"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.noDecoration} bg-white d-flex gap-2 p-2 rounded`}
-              >
-                <img
-                  src="/available_on/google_play_icon.svg"
-                  alt="Download para Android"
-                />
-                <span>Google Play</span>
-              </a>
-              <a
-                href="https://itunes.apple.com/ca/app/atende-net/id1330201742?mt=8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.noDecoration} bg-white d-flex gap-2 p-2 rounded`}
-              >
-                <img
-                  src="/available_on/app_store_icon.svg"
-                  alt="Download para IOS"
-                />
-                <span>App Store</span>
-              </a>
-            </div>
-          </div>
+        {/* <div className="d-flex flex-column gap-4 justify-content-between flex-md-row align-items-center flex-wrap">
           <a
             href="https://pinhais.atende.net/cidadao/acesso-informacao"
             target="_blank"
@@ -138,7 +105,7 @@ const Footer = function ({ theme }: Footer) {
               Informação
             </strong>
           </a>
-        </div>
+        </div> */}
         <div className="d-flex justify-content-center justify-content-md-between py-3 flex-wrap">
           <span className="text-center">
             Termos de uso | Política de privacidade

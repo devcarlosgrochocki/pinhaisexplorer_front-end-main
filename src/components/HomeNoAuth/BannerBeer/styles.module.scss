@@ -1,0 +1,52 @@
+@import "../../../../styles/colors.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.containerBanner {
+    padding: 3rem 0rem 7rem 0rem;
+    background-color: #0a100c;
+}
+
+.banner {
+    background-color: white;
+    border-radius: 20px;
+    background-image: url('../../../../public/background/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .beer-icon {
+        width: 50px;
+        height: auto;
+    }
+
+    .details {
+        h1 {
+            color: #333;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .btn {
+            background: $lightPaleYellow;
+            border-color: transparent;
+            border-radius: 8px;
+            color: #000;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            &:hover {
+              background: $paleYellow;
+              transition: 0.5s;
+            }
+          }
+    }
+}

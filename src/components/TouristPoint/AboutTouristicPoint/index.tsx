@@ -25,7 +25,7 @@ const AboutTouristicPoint: React.FC<AboutTouristicPointProps> = ({
             className="d-flex justify-content-center align-items-center"
             lg="6"
           >
-            <img src={imgUrl} alt={title} className="img-fluid" />
+            <img src={imgUrl} alt={title} className={`${styles.img} img-fluid`} />
           </Col>
         </Row>
       </Container>

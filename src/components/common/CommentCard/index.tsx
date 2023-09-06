@@ -22,7 +22,7 @@ const CommentCard: React.FC<CommentCardProps> = ({
         <img src={imageUrl} alt="User's avatar" className={styles.userImage} />
       </div>
       <div
-        className={`${styles.commentContainer} ${themeClass}  d-flex flex-column justify-content-start `}
+        className={`${styles.commentContainer} ${themeClass} d-flex flex-column justify-content-start `}
       >
         <p
           className={`${styles.commentName} d-flex flex-column justify-content-center `}
