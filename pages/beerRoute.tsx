@@ -51,12 +51,15 @@ const BeerRoute = function () {
         />
         <AboutTouristicPoint
           title="Sobre a “Rota da Cerveja”"
-          imgUrl="/cards/bg-card.svg"
-          text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book... "
+          imgUrl="/favicon/iconeBeerRoute.jpg"
+          text="A Rota da Cerveja busca oferecer a você opções de cervejas inovadoras que te levam a descobertas de aromas e sabores inusitados.
+
+ 
+          Aos apreciadores, descortina-se um novo caminho, uma alternativa para saborear calmamente cervejas produzidas com paixão, com esmero, com capricho, com gostinho do bem receber que te acolhe num gole, de braços abertos.
+           
+          Para àqueles que ainda não são consumidores de cervejas abre-se uma porta que desperta o desejo de provar, de experimentar.
+           
+          Desejamos que você mergulhe em um novo conceito, descubra que por trás da fabricação de uma cerveja há técnica, pesquisa, seleção de produtos, respeitando uma cultura milenar que traz consigo a experiência do fazer artesanal."
         />
         <Comments
           theme="yellow"

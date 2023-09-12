@@ -63,7 +63,7 @@ const Footer = function ({ theme }: Footer) {
               CEP: 83323410
             </address>
             <a
-              href="https://maps.google.com/?q=JOAO%20LEOPOLDO%20JACOMEL%2012162%20CENTRO%20Pinhais%20%2083323410"
+              href="https://maps.google.com/?q=JOAO%20LEOPOLDO%20JACOMEL%2012162%20CENTRO%20Pinhais%20%2083323410" target="blank"
               className={`${styles.noDecoration} ${styles.redOnHover} d-flex gap-2`}
             >
               <img src="footer/google_pin.svg" alt="Google pin" />

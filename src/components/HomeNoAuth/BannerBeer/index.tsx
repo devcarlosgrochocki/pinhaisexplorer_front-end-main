@@ -6,7 +6,7 @@ import Link from 'next/link';
 function Banner() {
     return (
         <section className={styles.containerBanner}>
-            <Container className={`${styles.banner} d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0 p-5`} 
+            <Container className={`${styles.banner} d-flex flex-column justify-content-between align-items-center gap-4 p-5`} 
                     data-aos="fade-right"
                     data-aos-duration="1200">
                 <img src="favicon/beer-mug-full.png" alt="Ícone de Cerveja" className={styles.beerIcon} />

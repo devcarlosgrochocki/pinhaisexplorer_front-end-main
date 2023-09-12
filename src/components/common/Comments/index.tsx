@@ -20,7 +20,7 @@ const CommentsSection: React.FC<CommentsSectionProps> = ({ theme, title }) => {
         <Row className="align-items-center gap-3 gap-lg-0 pb-5">
           <Col className="text-center text-lg-start" lg="8" md="12">
             <p className={`${styles.subTitle} fw-bold`}>
-              Últimos comentários feitos sobre a “Capela Nossa Senhora da Luz”
+              Últimos comentários postados
             </p>
           </Col>
           <Col

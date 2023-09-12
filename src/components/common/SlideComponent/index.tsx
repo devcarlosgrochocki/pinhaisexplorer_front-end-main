@@ -50,7 +50,7 @@ const SlideComponent: React.FC<SlideComponentProps> = ({ theme }) => {
             <SlideCard theme={theme} pointName="Bosque Municipal de Pinhais" imageUrl="/points/parqueDasAguas.png" />
           </SplideSlide>
           <SplideSlide>
-            <SlideCard theme={theme} pointName="Paronamico Parque Clube" imageUrl="/points/parqueDasAguas.png" />
+            <SlideCard theme={theme} pointName="Panoramico Parque Clube" imageUrl="/points/parqueDasAguas.png" />
           </SplideSlide>
           <SplideSlide>
             <SlideCard

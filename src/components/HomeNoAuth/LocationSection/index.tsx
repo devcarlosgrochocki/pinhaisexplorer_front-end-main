@@ -1,6 +1,7 @@
 import { Container } from "reactstrap";
 import TitleSectionComponent from "../../common/TitleSectionComponent";
 import styles from "./styles.module.scss";
+import GoogleMapComponent from '../../common/GoogleMap'; // Atualize o caminho conforme necessário
 
 interface LocationSectionProps {
   title: string;
@@ -25,7 +26,7 @@ const LocationSection: React.FC<LocationSectionProps> = ({
         <h2 className={h2Class}>
           Como chegar em Pinhais a partir da sua localização:
         </h2>
-        <img src="/location/maps.svg" alt="maps" />
+        <GoogleMapComponent />
       </Container>
     </section>
   );

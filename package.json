@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "@splidejs/react-splide": "^0.7.12",
     "aos": "^2.3.4",
     "axios": "^0.26.1",

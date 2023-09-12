@@ -18,12 +18,12 @@ const AboutTouristicPoint: React.FC<AboutTouristicPointProps> = ({
       <TitleSectionComponent title={title} />
       <Container className="pb-5">
         <Row className="gap-5 gap-lg-0 align-items-center">
-          <Col lg="6">
+          <Col lg="7">
             <p className={`${styles.textJustify} fw-bold`}>{text}</p>
           </Col>
           <Col
             className="d-flex justify-content-center align-items-center"
-            lg="6"
+            lg="5"
           >
             <img src={imgUrl} alt={title} className={`${styles.img} img-fluid`} />
           </Col>
