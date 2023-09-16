@@ -1,11 +1,11 @@
 import Head from "next/head";
-import HeaderNoAuth from "../src/components/HomeNoAuth/HeaderNoAuth";
-import PresentationSection from "../src/components/HomeNoAuth/PresentationSection";
+import HeaderNoAuth from "../src/components/Home/HeaderNoAuth";
+import PresentationSection from "../src/components/Home/PresentationSection";
 import styles from "../styles/touristPoint.module.scss";
 import TitleSectionComponent from "../src/components/common/TitleSectionComponent";
 import PhotoGallery from "../src/components/TouristPoint/PhotoGallery";
 import AboutTouristicPoint from "../src/components/TouristPoint/AboutTouristicPoint";
-import LocationSection from "../src/components/HomeNoAuth/LocationSection";
+import LocationSection from "../src/components/Home/LocationSection";
 import Footer from "../src/components/common/Footer";
 import Comments from "../src/components/common/Comments";
 

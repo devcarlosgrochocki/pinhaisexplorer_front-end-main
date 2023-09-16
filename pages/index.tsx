@@ -1,16 +1,16 @@
 import Head from "next/head";
-import HeaderNoAuth from "../src/components/HomeNoAuth/HeaderNoAuth";
-import PresentationSection from "../src/components/HomeNoAuth/PresentationSection";
-import TouristSpotSection from "../src/components/HomeNoAuth/TouristSpotSection";
-import LocationSection from "../src/components/HomeNoAuth/LocationSection";
-import BannerBeer from "../src/components/HomeNoAuth/BannerBeer"
+import HeaderNoAuth from "../src/components/Home/HeaderNoAuth";
+import PresentationSection from "../src/components/Home/PresentationSection";
+import TouristSpotSection from "../src/components/Home/TouristSpotSection";
+import LocationSection from "../src/components/Home/LocationSection";
+import BannerBeer from "../src/components/Home/BannerBeer"
 import Footer from "../src/components/common/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import styles from "../styles/index.module.scss";
 
-const HomeNoAuth = function () {
+const Home = function () {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -52,4 +52,4 @@ const HomeNoAuth = function () {
   );
 };
 
-export default HomeNoAuth;
+export default Home;

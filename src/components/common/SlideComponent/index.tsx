@@ -4,6 +4,9 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import SlideCard from "../SlideCard";
 import Link from "next/link";
 
+// Importando o arquivo JSON
+import touristPoints from "../../../../public/pontosTuristicos.json";
+
 interface SlideComponentProps {
   theme: "yellow" | "green";
 }
@@ -39,26 +42,15 @@ const SlideComponent: React.FC<SlideComponentProps> = ({ theme }) => {
             },
           }}
         >
-          <SplideSlide>
-            <Link href="/touristPoint">
-              <a style={{ color: "inherit", textDecoration: "none" }}>
-                <SlideCard theme={theme} pointName="Parque das Águas" imageUrl="/points/parqueDasAguas.png" />
-              </a>
-            </Link>
-          </SplideSlide>
-          <SplideSlide>
-            <SlideCard theme={theme} pointName="Bosque Municipal de Pinhais" imageUrl="/points/parqueDasAguas.png" />
-          </SplideSlide>
-          <SplideSlide>
-            <SlideCard theme={theme} pointName="Panoramico Parque Clube" imageUrl="/points/parqueDasAguas.png" />
-          </SplideSlide>
-          <SplideSlide>
-            <SlideCard
-              theme={theme}
-              pointName="Capela Nossa Senhora da Luz"
-              imageUrl="/points/parqueDasAguas.png"
-            />
-          </SplideSlide>
+          {touristPoints.places.map((point) => (
+            <SplideSlide key={point.name}>
+              <Link href="/touristPoint">
+                <a style={{ color: "inherit", textDecoration: "none" }}>
+                  <SlideCard theme={theme} pointName={point.name} imageUrl={point.imagePath} />
+                </a>
+              </Link>
+            </SplideSlide>
+          ))}
         </Splide>
       </div>
     </>

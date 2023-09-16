@@ -1,0 +1,250 @@
+{
+    "places": [
+      {
+        "name": "Ateliê Cobernelli",
+        "imagePath": "points/atelieCobernelli.png",
+        "category": "Cultura",
+        "latitude": -25.4294585766773,
+        "longitude": -49.14363854232969,
+        "description": "Teste"
+      },
+      {
+        "name": "Bosque Bordignon",
+        "imagePath": "points/bosqueBordignon.png",
+        "category": "Lazer",
+        "latitude": -25.413680536850002,
+        "longitude": -49.17925441675846,
+        "description": "Teste"
+      },
+      {
+        "name": "Bosque Municipal de Pinhais",
+        "imagePath": "points/bosqueMunicipal.png",
+        "category": "Lazer",
+        "latitude": -25.440367650266513,
+        "longitude": -49.19389046093327,
+        "description": "Teste"
+      },
+      {
+        "name": "Centro Cultural Galiestri",
+        "imagePath": "points/centroCulturalGagliastri.png",
+        "category": "Cultura",
+        "latitude": -25.40139925364838,
+        "longitude": -49.152418432099,
+        "description": "Teste"
+      },
+      {
+        "name": "Centro Cultural W. dos Santos",
+        "imagePath": "points/centroCulturalWanda.png",
+        "category": "Cultura",
+        "latitude": -25.439807626133813,
+        "longitude": -49.19129712152433,
+        "description": "Teste"
+      },
+      {
+        "name": "Centro Iraí Futebol e Eventos",
+        "imagePath": "points/centroIrai.png",
+        "category": "Esportes",
+        "latitude": -25.417676790804165,
+        "longitude": -49.1270225339447,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Coice de Mula",
+        "imagePath": "points/coiceDeMula.png",
+        "category": "Cervejarias",
+        "latitude": -25.42170812002403,
+        "longitude": -49.190734662011415,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Don Gentilis",
+        "imagePath": "points/donGentilis.png",
+        "category": "Cervejarias",
+        "latitude": -25.43530631085679,
+        "longitude": -49.19565047442774,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Oner",
+        "imagePath": "points/oner.png",
+        "category": "Cervejarias",
+        "latitude": -25.404343684504266,
+        "longitude": -49.184523843747705,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Ovelha",
+        "imagePath": "points/ovelha.png",
+        "category": "Cervejarias",
+        "latitude": 25.434041542638553,
+        "longitude": -49.201377414911505,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Saint Pauli",
+        "imagePath": "points/saintPauli.png",
+        "category": "Cervejarias",
+        "latitude": -25.40052655226708,
+        "longitude": -49.18603596176753,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Way Beer",
+        "imagePath": "points/wayBeer.png",
+        "category": "Cervejarias",
+        "latitude": -25.410813175095775,
+        "longitude": -49.18704527919999,
+        "description": "Teste"
+      },
+      {
+        "name": "Cervejaria Yellow Bird",
+        "imagePath": "points/yellowBird.png",
+        "category": "Cervejarias",
+        "latitude": -25.44028519622808,
+        "longitude": -49.19646940141673,
+        "description": "Teste"
+      }, 
+      {
+        "name": "Chácara Toa Toa",
+        "imagePath": "points/toaToa.png",
+        "category": "Lazer",
+        "latitude": -25.40459016767835,
+        "longitude": -49.149487445593486
+      },
+      {
+        "name": "Chácara Villar",
+        "imagePath": "points/chacaraVillar.png",
+        "category": "Lazer",
+        "latitude": -25.413020417303816,
+        "longitude": -49.119697932098816
+      },
+      {
+        "name": "Comércio Poupular",
+        "imagePath": "points/comercioPopular.png",
+        "category": "Cultura",
+        "latitude": -25.425845785431633,
+        "longitude": -49.18309216683863
+      },
+      {
+        "name": "Estação Ferroviária",
+        "imagePath": "points/estacaoFerroviaria.png",
+        "category": "Cultura",
+        "latitude": -25.445842734859024,
+        "longitude": -49.1913660638529
+      },
+      {
+        "name": "Expotrade Convention Center",
+        "imagePath": "points/expotrade.png",
+        "category": "Cultura",
+        "latitude": -25.434207097972067,
+        "longitude": -49.16678761675764
+      },
+      {
+        "name": "Horto Municipal Jorge G.",
+        "imagePath": "points/hortoMunicipal.png",
+        "category": "Lazer",
+        "latitude": -25.432721051952075,
+        "longitude": -49.13217647442783
+      },
+      {
+        "name": "Igreja Nossa S. do Carmo",
+        "imagePath": "points/nossaSenhoraDoCarmo.png",
+        "category": "Cultura",
+        "latitude": -25.417560134526376,
+        "longitude": -49.1268646030762
+      },
+      {
+        "name": "Painel Marcelo Diamant",
+        "imagePath": "points/painelMarcelo.png",
+        "category": "Cultura",
+        "latitude": -25.413157179194457,
+        "longitude": -49.1899466805943
+      },
+      {
+        "name": "Panorâmico Parque Clube",
+        "imagePath": "points/panoramico.png",
+        "category": "Lazer",
+        "latitude": -25.420844098729788,
+        "longitude": -49.132289950363216
+      },
+      {
+        "name": "ParCão",
+        "imagePath": "points/parcao.png",
+        "category": "Lazer",
+        "latitude": -25.430205005907684,
+        "longitude": -49.20233890326319
+      },
+      {
+        "name": "Parque Newton Freire Maia",
+        "imagePath": "points/newtonFreire.png",
+        "category": "Cultura",
+        "latitude": -25.379743583888175,
+        "longitude": -49.121640487924076
+      },
+      {
+        "name": "Parque Das Águas",
+        "imagePath": "points/parqueDasAguas.png",
+        "category": "Lazer",
+        "latitude": -25.442122922366483,
+        "longitude": -49.147579945592675
+      },
+      {
+        "name": "Parque Lineares",
+        "imagePath": "points/parqueLineares.png",
+        "category": "Lazer",
+        "latitude": -25.422007712340495,
+        "longitude": -49.19774184498865
+      },
+      {
+        "name": "Igreja Nossa S. da Boa E.",
+        "imagePath": "points/nossaSenhoraBoa.png",
+        "category": "Cultura",
+        "latitude": -25.443260654638006,
+        "longitude": -49.18912969084282
+      },
+      {
+        "name": "Paróquia Nossa Senhora da Luz",
+        "imagePath": "points/nossaSenhoraDaLuz.png",
+        "category": "Cultura",
+        "latitude": -25.424320510462007,
+        "longitude": -49.18338623025249
+      },
+      {
+        "name": "Pinheiro Araucária",
+        "imagePath": "points/pinheiroAraucaria.png",
+        "category": "Lazer",
+        "latitude": -25.434379651205997,
+        "longitude": -49.189962415340595
+      },
+      {
+        "name": "Praça do Skate",
+        "imagePath": "points/pracaDoSkate.png",
+        "category": "Esportes",
+        "latitude": -25.423888191583956,
+        "longitude": -49.18316211675793
+      },
+      {
+        "name": "Represa do Iraí",
+        "imagePath": "points/represaDoIrai.png",
+        "category": "Lazer",
+        "latitude": -25.397825600874526,
+        "longitude": -49.110608844200335
+      },
+      {
+        "name": "Velódromo De Pinhais",
+        "imagePath": "points/velodromoDePinhais.png",
+        "category": "Esportes",
+        "latitude": -25.440902177548967,
+        "longitude":  -49.16402124743865
+      },
+      {
+        "name": "Estrada Ecológica",
+        "imagePath": "points/estradaEcologica.png",
+        "category": "Lazer",
+        "latitude": -25.415199352959686,
+        "longitude": -49.14812639957144
+      }
+    ]
+  }  
+
+  
