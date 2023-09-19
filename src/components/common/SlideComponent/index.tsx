@@ -4,9 +4,6 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import SlideCard from "../SlideCard";
 import Link from "next/link";
 
-// Importando o arquivo JSON
-import touristPoints from "../../../../public/pontosTuristicos.json";
-
 interface SlideComponentProps {
   theme: "yellow" | "green";
 }
@@ -46,7 +43,11 @@ const SlideComponent: React.FC<SlideComponentProps> = ({ theme }) => {
             <SplideSlide key={point.name}>
               <Link href="/touristPoint">
                 <a style={{ color: "inherit", textDecoration: "none" }}>
-                  <SlideCard theme={theme} pointName={point.name} imageUrl={point.imagePath} />
+                  <SlideCard
+                    theme={theme}
+                    pointName={point.name}
+                    imageUrl={point.imagePath}
+                  />
                 </a>
               </Link>
             </SplideSlide>

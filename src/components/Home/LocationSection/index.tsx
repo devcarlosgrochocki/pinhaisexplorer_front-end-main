@@ -1,16 +1,20 @@
 import { Container } from "reactstrap";
 import TitleSectionComponent from "../../common/TitleSectionComponent";
 import styles from "./styles.module.scss";
-import GoogleMapComponent from '../../common/GoogleMap'; // Atualize o caminho conforme necessário
+import GoogleMapComponent from "../../common/GoogleMap"; // Atualize o caminho conforme necessário
 
 interface LocationSectionProps {
   title: string;
   hasBackground?: boolean;
+  lat: number;
+  lng: number;
 }
 
 const LocationSection: React.FC<LocationSectionProps> = ({
   title,
   hasBackground = false,
+  lat,
+  lng,
 }) => {
   const sectionClass = hasBackground ? `${styles.withBackground}` : "";
   const h2Class = hasBackground ? `${styles.whiteText}` : "";
@@ -26,7 +30,7 @@ const LocationSection: React.FC<LocationSectionProps> = ({
         <h2 className={h2Class}>
           Como chegar em Pinhais a partir da sua localização:
         </h2>
-        <GoogleMapComponent />
+        <GoogleMapComponent lat={lat} lng={lng} />
       </Container>
     </section>
   );

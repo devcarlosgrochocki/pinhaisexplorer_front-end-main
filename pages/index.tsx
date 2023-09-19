@@ -3,7 +3,7 @@ import HeaderNoAuth from "../src/components/Home/HeaderNoAuth";
 import PresentationSection from "../src/components/Home/PresentationSection";
 import TouristSpotSection from "../src/components/Home/TouristSpotSection";
 import LocationSection from "../src/components/Home/LocationSection";
-import BannerBeer from "../src/components/Home/BannerBeer"
+import BannerBeer from "../src/components/Home/BannerBeer";
 import Footer from "../src/components/common/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -43,7 +43,7 @@ const Home = function () {
           showRegisterCTA={true}
           backgroundImageUrl={"./background/presentation.svg"}
         />
-        <BannerBeer/>
+        <BannerBeer />
         <TouristSpotSection theme="green" />
         <LocationSection title="Como chegar em Pinhais" />
       </main>
