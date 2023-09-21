@@ -10,10 +10,14 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import styles from "../styles/index.module.scss";
 
+import React from "react";
+
 const Home = function () {
+
+
   useEffect(() => {
     AOS.init();
-  }, []);
+  }, [AOS]);
 
   return (
     <>
@@ -44,8 +48,8 @@ const Home = function () {
           backgroundImageUrl={"./background/presentation.svg"}
         />
         <BannerBeer />
-        <TouristSpotSection theme="green" />
-        <LocationSection title="Como chegar em Pinhais" />
+        <TouristSpotSection theme="green" touristPoints={[]} />
+        <LocationSection title="Como chegar em Pinhais" lat={-25.4325} lng={-49.1931} />
       </main>
       <Footer theme="green" />
     </>

@@ -5,9 +5,10 @@ import SlideComponent from "../../common/SlideComponent";
 
 interface TouristSpotSection {
   theme: "yellow" | "green";
+  touristPoints: Array<any>;
 }
 
-const TouristSpotSection: React.FC<TouristSpotSection> = ({ theme }) => {
+const TouristSpotSection: React.FC<TouristSpotSection> = ({ theme , touristPoints}) => {
   const themeClass =
     theme === "yellow" ? styles.yellowBackground : styles.greenBackground;
   return (
@@ -17,7 +18,7 @@ const TouristSpotSection: React.FC<TouristSpotSection> = ({ theme }) => {
         data-aos="fade-right"
         data-aos-duration="1200"
       >
-        <TitleSectionComponent title="Principais pontos turísticos" />
+        <TitleSectionComponent theme="green" title="Principais pontos turísticos" />
         <SlideComponent theme={theme} />
       </Container>
     </section>

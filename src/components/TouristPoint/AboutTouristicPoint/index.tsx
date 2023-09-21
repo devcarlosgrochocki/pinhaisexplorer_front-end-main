@@ -13,13 +13,22 @@ const AboutTouristicPoint: React.FC<AboutTouristicPointProps> = ({
   text,
   imgUrl,
 }) => {
+  const textWithBreaks = text.split('\n').map((str, index, array) => (
+    <>
+      {str}
+      {index === array.length - 1 ? null : <br />}
+    </>
+  ));
+
   return (
     <section className="pb-5 mb-5">
-      <TitleSectionComponent title={title} />
+      <TitleSectionComponent theme="green" title={title} />
       <Container className="pb-5">
         <Row className="gap-5 gap-lg-0 align-items-center">
           <Col lg="7">
-            <p className={`${styles.textJustify} fw-bold`}>{text}</p>
+            <p className={`${styles.textJustify} fw-bold`}>
+              {textWithBreaks}
+            </p>
           </Col>
           <Col
             className="d-flex justify-content-center align-items-center"
@@ -33,4 +42,6 @@ const AboutTouristicPoint: React.FC<AboutTouristicPointProps> = ({
   );
 };
 
+
 export default AboutTouristicPoint;
+ 
