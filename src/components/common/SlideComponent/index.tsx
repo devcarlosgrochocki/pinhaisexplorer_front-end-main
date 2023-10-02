@@ -36,29 +36,27 @@ interface SlideComponentProps {
   theme: "yellow" | "green";
 }
 
-const SlideComponent: React.FC<SlideComponentProps> = ({
-  theme,
-}) => {
+const SlideComponent: React.FC<SlideComponentProps> = ({ theme }) => {
   const [touristPoints, setTouristPoints] = React.useState([]);
   const getTouristPoints = React.useCallback(async () => {
     try {
-      const response = await TouristPointServices.getAllTouristPoint(); // Assumindo que este método existe
+      const response = await TouristPointServices.getAllTouristPoint();
 
       setTouristPoints(response.data);
     } catch (error) {
       console.error("Erro ao buscar pontos turísticos:", error);
     }
-  }, [])
+  }, []);
 
   React.useEffect(() => {
     getTouristPoints();
-  }, [getTouristPoints])
+  }, [getTouristPoints]);
 
   return (
     <>
       <div className="d-flex position-relative flex-column align-items-center">
         <Splide options={splideOptions}>
-          {touristPoints.map(({name, url, imagePath}) => (
+          {touristPoints.map(({ name, url, imagePath }) => (
             <SplideSlide key={name}>
               <Link href={`/ponto-turistico${url}`}>
                 <a style={{ color: "inherit", textDecoration: "none" }}>
